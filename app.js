@@ -6,12 +6,19 @@ btn.addEventListener('click',()=>{
     alert(url)
 
     fetch(url,{
-        mode: 'no-cors',
         method : 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        mode: 'no-cors',
+        
         body : JSON.stringify({url : url})
     })
     .then(res => res.json())
     .then(res => {
         console.log(res)
+    })
+    .catch(err =>{
+        console.log(err)
     })
 })
