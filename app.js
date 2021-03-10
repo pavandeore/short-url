@@ -2,15 +2,15 @@ let btn = document.getElementById('btn');
 
 btn.addEventListener('click',()=>{
     let inp = document.getElementById('inp');
-    let url = 'https://cleanuri.com/api/v1/shorten/'+inp.value;
-    alert(url)
+    let url = 'https://gentle-sierra-66467.herokuapp.com/https://cleanuri.com/api/v1/shorten/https://google.com';
+    
 
     fetch(url,{
         method : 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        mode: 'no-cors',
+        Origin: 'https://gentle-sierra-66467.herokuapp.com/',
         
         body : JSON.stringify({url : url})
     })
@@ -18,7 +18,7 @@ btn.addEventListener('click',()=>{
     .then(res => {
         console.log(res)
     })
-    .catch(err =>{
+    .catch(err => {
         console.log(err)
     })
 })
