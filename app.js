@@ -6,6 +6,7 @@ btn.addEventListener('click',()=>{
     alert(url)
 
     fetch(url,{
+        mode: 'no-cors',
         method : 'POST',
         body : JSON.stringify({url : url})
     })
