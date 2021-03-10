@@ -1,0 +1,36 @@
+*{
+margin:0;
+font-family: arial;
+}
+.container{
+    height: 95vh;
+    background: #252525;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#heading{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+#inp{
+    width: 50vw;
+    font-size: 1.5rem;
+    padding: 10px;
+    outline: none;
+    
+}
+#btn{
+    font-size:1.5rem;
+    margin: 20px;
+    padding:10px 25px;
+}
+#btn:hover{
+    cursor: pointer;
+}
+#btn:active{
+    transform: scale(0.95);
+}
