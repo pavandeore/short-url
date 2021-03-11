@@ -23,10 +23,10 @@ btn.addEventListener('click',()=>{
         inp.select();
         inp.setSelectionRange(0, 99999); /* For mobile devices */
         document.execCommand("copy");
-        resultDiv.innerHTML = 'Copied ! ';
+        resultDiv.innerHTML = '<b>Copied !</b>';
         setTimeout(() => {
             resultDiv.innerHTML = "";
-        }, 1500);
+        }, 2000);
     })
     .catch(err =>{
         console.log(err)
